@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таксоландия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="background" style="background-image: url('images/menu_background.jpg');"></div>
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1 class="title">ТАКСОЛАНДИЯ</h1>
+        <p class="subtitle">Волшебное королевство, где живут таксы. Твоё приключение начинается здесь.</p>
+
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="startNewGame()">Новая история</button>
+            <button class="btn btn-secondary" id="btnContinue" onclick="continueGame()" disabled>Продолжить</button>
+            <button class="btn btn-tertiary" onclick="showHistory()">История прохождений</button>
+        </div>
+    </div>
+</div>
+
+<div id="historyModal" class="modal">
+    <div class="modal-content">
+        <h2>История прохождений</h2>
+        <div id="historyList"></div>
+        <button class="btn btn-secondary" onclick="closeHistory()">Закрыть</button>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

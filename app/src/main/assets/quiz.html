@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест - Таксоландия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="background" style="background-image: url('images/quiz_background.jpg');"></div>
+    <div class="overlay"></div>
+
+    <div class="content quiz-content">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="question-card">
+            <h2 id="questionText">Загрузка вопроса...</h2>
+        </div>
+
+        <div class="answers" id="answersContainer"></div>
+
+        <button class="btn btn-back" id="btnBack" onclick="goBack()" style="display: none;">← Назад</button>
+    </div>
+</div>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

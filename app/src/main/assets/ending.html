@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Итоги - Таксоландия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container ending-container">
+    <div class="ending-image" id="endingImage" style="background-image: url('images/ending_funny.jpg');"></div>
+
+    <div class="content">
+        <img id="characterPhoto" class="result-photo" src="" onerror="this.style.display='none'">
+
+        <h1 id="endingTitle" class="ending-title"></h1>
+        <p id="endingDesc" class="ending-desc"></p>
+        <h2 id="characterTitle" class="character-title"></h2>
+
+        <div class="stats-box">
+            <div class="stat">
+                <span class="stat-label">Смелость:</span>
+                <span class="stat-value" id="statCourage"></span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Доброта:</span>
+                <span class="stat-value" id="statKindness"></span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Хитрость:</span>
+                <span class="stat-value" id="statCunning"></span>
+            </div>
+            <div class="stat">
+                <span class="stat-label">Мудрость:</span>
+                <span class="stat-value" id="statWisdom"></span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-primary" onclick="returnToMenu()">Вернуться в меню</button>
+            <button class="btn btn-secondary" onclick="startNewGame()">Начать заново</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/ending.js"></script>
+</body>
+</html>

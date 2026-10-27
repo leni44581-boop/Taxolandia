@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История - Таксоландия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container story-container">
+    <div class="background" id="storyBackground" style="background-image: url('images/scene_1_gates.jpg');"></div>
+    <div class="overlay-light"></div>
+
+    <!-- Овальная кнопка "Назад" в левом верхнем углу -->
+    <button class="btn btn-back-oval" onclick="goBack()" id="btnBack" style="display: none;">Назад</button>
+
+    <!-- Кнопка "Меню" в правом верхнем углу -->
+    <button class="btn btn-status" onclick="returnToMenu()">Меню</button>
+
+    <div class="dialogue-box">
+        <h3 id="speaker" class="speaker"></h3>
+        <p id="storyText" class="story-text"></p>
+        <div class="choices" id="choicesContainer"></div>
+    </div>
+</div>
+
+<script src="js/story.js"></script>
+</body>
+</html>
